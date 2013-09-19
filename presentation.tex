@@ -1,0 +1,39 @@
+\documentclass{beamer}
+
+\input{setup/packages.tex}
+\input{setup/options.tex}
+\input{setup/commands.tex}
+
+% --- meta ---
+\titlegraphic{
+   \includegraphics[height=1cm,keepaspectratio]{logos/cern.pdf}
+   \hfill
+   \includegraphics[height=1cm,keepaspectratio]{logos/lhcb.pdf}
+   \hfill
+   \includegraphics[height=1cm,keepaspectratio]{logos/tu.pdf}
+}
+\title{\Huge Surgery on the HLT}
+\author[Dungs, Fitzpatrick, Gligorov]{K.~Dungs \\\and C.~Fitzpatrick \and V.~V.~Gligorov}
+
+% --- document ---
+\begin{document}
+
+{
+    \setbeamertemplate{footline}{}  % get rid of page number on first slide
+    \frame{\maketitle}
+}
+
+%\begin{frame}{Inhalt}
+%    \tableofcontents[hideallsubsections]
+%\end{frame}
+
+\input{content/intro.tex}
+\input{content/trigger.tex}
+\input{content/results.tex}
+\input{content/outlook.tex}
+
+\begin{frame}{References}
+    \printbibliography
+\end{frame}
+
+\end{document}

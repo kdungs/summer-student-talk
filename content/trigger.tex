@@ -1,0 +1,41 @@
+\section{Trigger}
+\begin{frame}{Trigger}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.5\textwidth]{figures/triggerflow.pdf}
+        \caption{\cite{conor}}
+    \end{figure}
+\end{frame}
+\begin{frame}{Post-LS1-Trigger}
+    \begin{figure}
+        \centering
+        \includegraphics[width=.5\textwidth]{figures/run2triggerflow.pdf}
+        \caption{\cite{conor}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Getting There}
+    \begin{itemize}
+        \item Important: Find dependecies
+        \item ``Scalpel" approach \begin{enumerate}
+            \item Remove HLT1 lines
+            \item From errors find dependencies
+            \item Resolve until there are none
+        \end{enumerate}
+        \item Good insight into the Trigger
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{For Example}
+    \begin{itemize}
+        \item PV3D \begin{itemize}
+            \item used to be in HLT1
+            \item couldn't be instantiated from HLT2
+            \item[$\Rightarrow$] bug in LoKi
+        \end{itemize}
+        \item TISTOS decisions \begin{itemize}
+            \item only produced in HLT1
+            \item[$\Rightarrow$] remove every single occurence in the HLT2 lines
+        \end{itemize}
+    \end{itemize}
+\end{frame}
